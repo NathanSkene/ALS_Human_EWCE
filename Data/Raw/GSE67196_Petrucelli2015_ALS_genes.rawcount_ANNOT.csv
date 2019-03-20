@@ -1,0 +1,45 @@
+Group, Sample #," Clinical diagnosis","Pathological diagnosis",sex,Race,"Site of Onset",Age of Onset (y),Duration (m),"Age of death(years)",PMI (hours),Braak stage,TDP-43 pathology,TDP-43 type,FHx MND,FHx FTD,"FHx TDP-43 Neurodegeneration"
+Non-neurological disease control,24,Healthy,Normal,F,White/ED,n/a,n/a,n/a,64.9,30,1,0,0,no,no,yes
+Non-neurological disease control,86,Healthy,Normal,M,White/ED,n/a,n/a,n/a,76.6,18,2,0,0,no,no,no
+Non-neurological disease control,90,Healthy,Normal,F,White/ED,n/a,n/a,n/a,62.1,2,0,0,0,no,no,no
+Non-neurological disease control,91,Healthy,Normal,F,White/ED,n/a,n/a,n/a,72.9,18,1,0,0,no,no,no
+Non-neurological disease control,93,Healthy,Normal,M,White/ED,n/a,n/a,n/a,80.8,15,1,0,0,no,no,yes
+Non-neurological disease control,94,aMCI,Normal,M,White/ED,n/a,n/a,n/a,75.1,17,0,n/a,n/a,n/a,n/a,n/a
+Non-neurological disease control,95,Healthy (depression),Normal,M,White/ED,n/a,n/a,n/a,78.2,13,2,0,0,no,no,yes
+Non-neurological disease control,97,Healthy (depression),Normal,M,Hispanic/Latino,n/a,n/a,n/a,78.3,8,2.5,0,0,no,no,yes
+Non-neurological disease control,100,Healthy,Normal,M,White/ED,n/a,n/a,n/a,55,13,0,n/a,n/a,n/a,n/a,n/a
+Other disease control,20,AD,PA,M,White/ED,n/a,72,112,81,9,3,0,0,no,no,no
+Other disease control,23,AD,AGD/Fahr,M,White/ED,n/a,72,50,75,10,3,0,0,no,no,no
+Other disease control,25,CBD,Vascular disease,M,White/ED,n/a,63,79,69,8,2,0,0,n/a,n/a,n/a
+sALS,11,ALS,ALS/PA,F,White/ED,Bulbar,60.2,15.1,61.4,10,2,1,ALS,no,no,no
+sALS,12,ALS,ALS,M,White/ED,Upper limbs,45.2,59,50.1,9,1,1,ALS,no,no,no
+sALS,13,ALS,ALS,M,White/ED,Upper limbs,49.9,46.8,53.8,6,1,1,ALS,no,no,no
+sALS,14,ALS,ALS/SC,M,White/ED,Lower limbs,61.2,64.1,66.6,13,1,1,ALS,no,no,no
+sALS,70,ALS,ALS,F,White/ED,Upper limbs,48.8,53.9,53.2,16,0,1,ALS,no,no,no
+sALS,71,ALS,ALS,M,White/ED,Upper limbs,45.4,24.6,47.5,5,4,1,ALS,possible,no,no
+sALS,72,ALS,ALS/PA,F,White/ED,Bulbar,57.6,39,60.9,16,0,1,ALS,possible,possible,no
+sALS,73,ALS,ALS/SC,F,White/ED,Upper limbs,64.1,12.6,65.2,7,1,1,ALS,no,no,yes
+sALS,74,ALS,ALS,F,White/ED,Upper limbs,66.5,31.9,69.2,3,0.5,1,ALS,no,no,no
+sALS,75,ALS,ALS,F,White/ED,Bulbar,67.2,38.1,70.4,12,2,1,ALS,no,no,no
+C9ALS,1,Bulbar palsy,ALS/PA,F,White/ED,Bulbar,62.5,21.7,64.3,15,2,1,ALS,no,no,no
+C9ALS,2,ALS,ALS,M,White/ED,Bulbar,56.1,26.8,58.3,6,1.5,1,ALS,no,no,no
+C9ALS,6,ALS,ALS,M,White/ED,Upper limbs,52.3,76.4,58.7,18,1,1,ALS,yes,no,yes
+C9ALS,7,ALS-MCI,ALS,M,White/ED,Bulbar,49.5,49.6,53.6,7,0.5,1,ALS,possible,no,no
+C9ALS,34,ALS,ALS,F,White/ED,Bulbar,47.3,34,50.2,8,0.5,1,ALS,no,no,yes
+C9ALS,42,ALS,ALS,F,White/ED,Upper limbs,48.4,10.8,49.3,5,2,1,ALS,no,no,yes
+C9ALS,57,ALS,ALS,F,White/ED,Lower limbs,49.7,15.3,51,18,0.5,1,ALS,no,no,no
+C9ALS,62,ALS,ALS,F,White/ED,Lower limbs,41.3,15.2,42.6,3,2,1,ALS,adopted,adopted,adopted
+C9ALS,63,ALS,ALS,F,White/ED,Lower limbs,45.6,47.2,49.5,6,0.5,1,ALS,yes,no,no
+PSP,283,PSP,PSP/PA,F,White/ED,n/a,n/a,n/a,60,18,2,0,0,no,no,no
+PSP,285,PSP,PSP/AGD,F,White/ED,n/a,n/a,n/a,57,5,4,0,0,n/a,n/a,n/a
+PSP,286,PSP,PSP,M,White/ED,n/a,n/a,n/a,57,4,2,0,0,adopted,adopted,adopted
+PSP,287,PSP,PSP,F,White/ED,n/a,n/a,n/a,59,7,1,0,0,no,no,no
+PSP,288,PSP,PSP,M,White/ED,n/a,n/a,n/a,64,5,1,0,0,no,no,no
+PSP,290,PSP,PSP/AGD,F,White/ED,n/a,n/a,n/a,60,7,1,0,0,no,no,no
+PSP,291,PSP,PSP,F,White/ED,n/a,n/a,n/a,59,9,1,0,0,no,no,no
+PSP,292,PSP,PSP,M,White/ED,n/a,n/a,n/a,58,6,0,0,0,np,np,np
+PSP,293,PSP,PSP,M,White/ED,n/a,n/a,n/a,52,10,0.5,0,0,no,no,no
+PSP,294,PSP,PSP,F,White/ED,n/a,n/a,n/a,57,6,1,0,0,yes,no,no
+PSP,295,PSP,PSP,F,White/ED,n/a,n/a,n/a,59,5,1,0,0,no,no,Yes
+PSP,296,PSP,PSP,F,White/ED,n/a,n/a,n/a,64,4,2,0,0,no,no,no
+PSP,298,PSP,PSP,M,White/ED,n/a,n/a,n/a,59,12,2,0,0,no,no,no

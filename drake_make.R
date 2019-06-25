@@ -31,3 +31,5 @@ config <- drake_config(plan)
 vis_drake_graph(config)
 
 make(plan)
+
+# loadd(ctd,ewce_spinal,tt_spinal)

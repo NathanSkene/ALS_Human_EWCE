@@ -49,6 +49,7 @@
 #' @importFrom reshape2 melt
 # @import plyr
 generate.bootstrap.plots.for.transcriptome <- function(sct_data,tt,thresh,annotLevel=1,reps,full_results=NA,listFileName="",showGNameThresh=25){
+    require(cowplot)
     # Check the arguments
     correct_length = length(full_results)==5
     required_names = c("joint_results","hit.cells.up","hit.cells.down","bootstrap_data.up","bootstrap_data.down")
@@ -69,32 +70,11 @@ generate.bootstrap.plots.for.transcriptome <- function(sct_data,tt,thresh,annotL
         mouse.hits = mouse.hits[mouse.hits %in% rownames(sct_data[[1]]$specificity)]
         mouse.bg = unique(tt$MGI.symbol)
         mouse.bg = mouse.bg[!mouse.bg %in% mouse.hits]
-        mouse.bg = mouse.bg[mouse.bg %in% rownames(sct_data[[1]]$specficity)]
-        combinedGenes = unique(c(mouse.hits, mouse.bg))
+        mouse.bg = mouse.bg[mouse.bg %in% rownames(sct_data[[1]]$specificity)]
 
         # Get expression data of bootstrapped genes
-        signif_res = as.character(results$CellType)[results$p<0.05]
-        nReps = 1000
-        exp_mats = list()
-        #for(cc in signif_res){
-        for(cc in as.character(unique(a$CellType))){
-
-            exp_mats[[cc]] = matrix(0,nrow=nReps,ncol=length(mouse.hits))
-            rownames(exp_mats[[cc]]) = sprintf("Rep%s",1:nReps)
-        }
-
-        for(s in 1:nReps){
-            bootstrap_set = sample(combinedGenes,length(mouse.hits))
-            ValidGenes = rownames(sct_data[[annotLevel]]$specificity)[rownames(sct_data[[annotLevel]]$specificity) %in% bootstrap_set]
-
-            expD = sct_data[[annotLevel]]$specificity[ValidGenes,]
-
-            #for(cc in signif_res){
-            for(cc in as.character(unique(a$CellType))){
-                exp_mats[[cc]][s,] = sort(expD[,cc])
-            }
-        }
-
+        exp_mats = get_bootstrap_matrix(nReps=reps,mouse.hits=mouse.hits,mouse.bg=mouse.bg,cell_types=as.character(unique(a$CellType)),sct_data=sct_data,annotLevel=annotLevel)
+        
         # Get expression levels of the hit genes
         hit.exp = sct_data[[annotLevel]]$specificity[mouse.hits,]	#cell.list.exp(mouse.hits)
 
